@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishan roy Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particle-container"></div>
+    
+<!-- Replace your existing nav element with this -->
+<nav id="navbar">
+    <div class="logo"><img src="download.gif" alt="Logo Image"/></div>
+    <div class="hamburger">
+         <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="nav-links">
+        <button data-section="home">
+            <i class="fas fa-home"></i> Home
+        </button>
+        <button data-section="projects">
+            <i class="fas fa-code"></i> Projects
+        </button>
+        <button data-section="skills">
+            <i class="fas fa-laptop-code"></i> Skills
+        </button>
+        <button data-section="achievements">
+            <i class="fas fa-trophy"></i> Achievements
+        </button>
+        <button data-section="contact">
+            <i class="fas fa-envelope"></i> Contact
+        </button>
+        <button data-section="design">
+            <i class="fas fa-palette"></i> Design
+        </button>
+
+
+
+    </div>
+</nav>
+
+<div class="menu-backdrop"></div>
+
+    <div class="content-wrapper">
+        <main id="content">
+            <section id="home" class="active-section">
+                <div class="home-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight typing-text" id="typing-name">Kishan Roy</span>
+                    </h1>
+                    <p class="hero-description">
+                        A <span class="highlight"> Engineering</span> Student 
+                        <span class="typing-container" data-text="(Parul University, Gujarat), A Programmer and Developer."></span>
+                    </p>
+                </div>
+            </section>
+            
+            <section id="projects" class="hidden-section">
+                <h2 class="cool-heading">My Projects</h2>
+                <p class="section-subtitle">Mern stack and Data Science project !!</p>
+                <div class="projects-grid">
+                   <div class="project-card">
+                    <h3>
+<div class="icon-container"><i class="fas fa-address-card project-title-icon"></i></div>                         Chat Analysis
+                    </h3>
+                    <p>Analyze WhatsApp chat data to uncover insights like most active users, common words, and message frequency.</p>
+                    <div class="tech-tags">
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <span>
+                        <img src="https://numpy.org/images/logo.svg" alt="NumPy" class="tech-icon">
+                        NumPy
+                    </span>
+
+                    <span>
+                        <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" class="tech-icon">
+                        Pandas
+                    </span>
+
+                    <span>
+                        <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="Seaborn" class="tech-icon">
+                        Seaborn
+                    </span>
+
+                    <span>
+                        <img src="https://matplotlib.org/_static/images/logo2.svg" alt="Matplotlib" class="tech-icon">
+                        Matplotlib
+                    </span>
+                    </div>
+                    <a href="#" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>
+                            <div class="icon-container"><i class="fas fa-address-card project-title-icon"></i></div>
+                            Portfolio Website
+                        </h3>
+                        <p>My personal portfolio to showcase my skills and projects, built with HTML, CSS, and JavaScript, focusing on modern design and animations.</p>
+                        <div class="tech-tags">
+                            <span><i class="fab fa-html5"></i> HTML5</span>
+                            <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span><i class="fab fa-js-square"></i> JavaScript</span>
+                        </div>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                  
+                    <div class="project-card">
+                        <h3><div class="icon-container"><i class="fas fa-address-card project-title-icon"></i></div>
+                            Blogging Website
+                        </h3>
+                        <p>A platform for sharing thoughts and articles, built with Mern Stack and integrated with a MongoDB database.</p>
+                        <p>!!COMING SOON!!</p>
+                        <div class="tech-tags">
+                            <span><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" width="18">MongoDB</span>
+                            <span><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="20">React</span>
+                            <span><img src="https://cdn.simpleicons.org/express/000000" alt="Express.js" width="18">Express.js</span>
+                            <span><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" width="18">Node.js</span>
+                            <span><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" width="18">JWT</span>
+                            <span><img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="Firebase" width="18">Firebase</span>  
+                        </div>
+                         <a href="#" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <section id="skills" class="hidden-section">
+                   <h1>My Skills & Expertise</h1>     
+             <!-- Languages Section -->
+            <h2><i class="fas fa-language"></i> Languages</h2>
+            <div class="cards language-cards">
+            <div class="card">
+                <div class="circle">
+                    <svg class="progress-ring" width="100" height="100">
+                        <circle class="progress-ring__track" stroke-width="8" fill="transparent" r="45" cx="50" cy="50"/>
+                        <circle class="progress-ring__circle" stroke-width="8" fill="transparent" r="45" cx="50" cy="50"/>
+                    </svg>
+                    <span>100%</span>
+                </div>
+                <p>
+                    <img src="india.png" alt="India Flag" class="flag-icon" />
+                    Hindi
+                </p>
+                <p>Native Speaker</p>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <svg class="progress-ring" width="100" height="100">
+                        <circle class="progress-ring__track" stroke-width="8" fill="transparent" r="45" cx="50" cy="50"/>
+                        <circle class="progress-ring__circle" stroke-width="8" fill="transparent" r="45" cx="50" cy="50"/>
+                    </svg>
+                    <span>95%</span>
+                </div>
+                <p>
+                    <img src="uk.png" alt="UK Flag" class="flag-icon" />
+                    English
+                </p>
+                <p>High B2 Level</p>
+            </div>
+            <div class="card">
+                <div class="circle">
+                    <svg class="progress-ring" width="100" height="100">
+                        <circle class="progress-ring__track" stroke-width="8" fill="transparent" r="45" cx="50" cy="50"/>
+                        <circle class="progress-ring__circle" stroke-width="8" fill="transparent" r="45" cx="50" cy="50"/>
+                    </svg>
+                    <span>87%</span>
+                </div>
+                <p>
+                    <img src="india.png" alt="India Flag" class="flag-icon" />
+                    Marathi
+                </p>
+                <p>native Speaker</p>
+            </div>
+             <div class="card">
+                <div class="circle">
+                    <svg class="progress-ring" width="100" height="100">
+                        <circle class="progress-ring__track" stroke-width="8" fill="transparent" r="45" cx="50" cy="50"/>
+                        <circle class="progress-ring__circle" stroke-width="8" fill="transparent" r="45" cx="50" cy="50"/>
+                    </svg>
+                    <span>89%</span>
+                </div>
+                <p>
+                    <img src="india.png" alt="India Flag" class="flag-icon" />
+                    Gujarati
+                </p>
+                <p>native Speaker</p>
+            </div>
+        </div>
+                <!-- Technical Skills Section -->
+                <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+                <div class="skill-bar">
+                    <p><i class="fas fa-globe"></i> Web Development</p>
+                    <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <p><i class="fab fa-python"></i> Python</p>
+                    <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <p><i class="fas fa-gamepad"></i> C++/OPPs</p>
+                    <div class="bar"><div class="fill" style="width: 89%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <p><i class="fas fa-code"></i> DSA</p>
+                    <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <p><i class="fas fa-database"></i> Data Science</p>
+                    <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <p><i class="fas fa-gamepad"></i> OS/DBMS/CN</p>
+                    <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+                </div>
+            
+                <!-- Education & Expertise Section -->
+                <h2><i class="fas fa-graduation-cap"></i> Education & Expertise</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3><i class="fas fa-university"></i> College</h3>
+                        <p>Engineering Student at Parul University</p>
+                        <ul>
+                            <li><i class="fas fa-book"></i> B-tech</li>
+                            <li><i class="fas fa-microscope"></i> CSE student</li>
+                            <li><i class="fas fa-comments"></i> Communication</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-code"></i> Programming</h3>
+                        <p>Self-taught Developer</p>
+                        <ul>
+                            <li><i class="fas fa-paint-brush"></i> Mern Stack Developer</li>
+                            <!-- <li><i class="fas fa-brain"></i> </li> -->
+                            <li><i class="fas fa-database"></i> Data Science</li>
+                            <li><i class="fas fa-gamepad"></i> Data Structure & Algorithms</li> 
+                        </ul>
+                    </div>
+                </div>
+            </section>
+          <section id="achievements" class="hidden-section">
+            <h2 class="cool-heading">Achievements & Recognition</h2>
+            <p class="section-subtitle">A collection of my accomplishments and contributions.</p>
+            <div class="achievements-grid">
+                <!-- Hackathons Card -->
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                    <h3>Hackathons & Events</h3>
+                    <p>Collaborative and intensive coding events.</p>
+                    <ul>
+                     
+                        <li>
+                            <a href="https://drive.google.com/file/d/1Z47om_Z6ZrizWDRPykaHKo3eaPyw1LGo/view?usp=sharing" target="_blank">Vadodara Hackathon 2024 </a>
+                            <button class="view-proof-btn" data-image="vadodara-hackathon-proof.jpg">
+                                <i class="fas fa-eye"></i> View Proof
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+               
+                <!-- Certifications Card -->
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certifications</h3>
+                    <p>Validating my skills with industry-recognized credentials.</p>
+                    <ul>
+                        <li><a href="" target="_blank">AWS Cloud Practitioner</a></li>
+                    </ul>
+                </div>
+
+                 <!-- Competitive Programming Card -->
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-keyboard"></i></div>
+                    <h3>Competitive Programming</h3>
+                    <p>Problem-solving on various platforms.</p>
+                    <ul>
+                        <li><a href="https://leetcode.com/u/kishan_roy_1001/" target="_blank">LeetCode Profile</a></li>
+                        <li><a href="https://codeforces.com/profile/_kishan_1001" target="_blank">Codeforces Profile</a></li>
+                        <li><a href="https://codolio.com/profile/_kishan_roy_1001" target="_blank">Codeolio Profile</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+          </section>
+
+          <section id="contact" class="hidden-section">
+            <h2 class="cool-heading">Contact Me</h2>
+            <p class="section-subtitle">Have a question or want to work together? Drop me a message!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="form-name">Your Name</label>
+                    <input type="text" id="form-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+        <section id="design" class="hidden-section">
+            <div class="design-hero">
+                <h2 class="glitch-title" data-text="Creative Corner">Creative Corner</h2>
+                <p class="subtitle">Exploring the intersection of code and creativity -*(SOON)*-</p>
+            </div>
+        
+        </section>
+    </main>
+    <footer>
+        <div class="footer-bottom">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="footer-text">
+                    <h4><span class="highlight">Kishan</span> ( Engineering Student / Developer / Competitive Programmer )</h4>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/kishan-1001"  target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kishan-roy1001"  target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-icon" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#"  target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+            <div class="footer-info">
+                <p class="copyright">© 2025 <span class="highlight">Made with ❤ by Kishan Roy</span></p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Image Modal Structure -->
+<div id="image-modal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modal-image">
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
