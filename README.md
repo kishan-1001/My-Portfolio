@@ -41,7 +41,6 @@ This project was built using the following core technologies:
     * **Font Awesome** - For scalable vector icons.
 
 ---
-
 ## ©️ License and Copyright
 
 This project is licensed under the **MIT License**.
